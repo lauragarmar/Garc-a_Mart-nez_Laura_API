@@ -60,8 +60,12 @@
 .article1{
     grid-area:article1;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
-
 
 .country, .search{
     width: 20%;
