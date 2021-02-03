@@ -11,7 +11,7 @@
 }
 
 .header__text{
-    margin-left: 500px;
+    margin-left: 750px;
     font-family: 'Bebas Neue', cursive;
     
     font-size:xx-large;
@@ -80,6 +80,7 @@
     border: 1px solid black;
 }
 .footer {
+    background-color: #333;
     grid-area: footer;
     border: 1px solid black;
 }
