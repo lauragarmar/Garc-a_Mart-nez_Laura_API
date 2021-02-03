@@ -1,11 +1,15 @@
 
-
 .container{
     border: 1px solid black;
 }
 
 .header{
     border: 1px solid black;
+    grid-area: header;
+}
+
+.header_text{
+    text-align: center;
 }
 
 .nav__list {
@@ -38,21 +42,27 @@
 }
 
 
-.header {
-    grid-area: header;
-}
-
 .nav {
+    border: 1px solid black;
     grid-area: nav;
 }
 
 .article1{
     grid-area:article1;
+    border: 1px solid black;
 }
 
 .article2{
     grid-area: article2;
+    border: 1px solid black;
 }
 .footer {
     grid-area: footer;
+    border: 1px solid black;
+}
+
+.footer__rs{
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
 }
