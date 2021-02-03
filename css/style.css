@@ -5,11 +5,17 @@
 
 .header{
     border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
     grid-area: header;
 }
 
-.header_text{
-    text-align: center;
+.header__text{
+   
+}
+.header__img{
+    width: 100px;
+    height:100px;
 }
 
 .nav__list {
