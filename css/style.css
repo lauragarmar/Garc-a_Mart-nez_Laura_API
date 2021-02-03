@@ -62,6 +62,15 @@
     border: 1px solid black;
 }
 
+
+.country, .search{
+    width: 20%;
+}
+
+.search{
+    margin-top: 10px;
+}
+
 .article2{
     grid-area: article2;
     border: 1px solid black;
