@@ -1,4 +1,4 @@
-let cuerpo= document.getElementById("cuerpo");
+let container= document.getElementById("container");
 
 /*  fetch("https://calendarific.com/api/v2/holidays?&api_key=16f912c9625c58a56df8017b58c31bdf64da6c87&country=ES&year=2021")
 .then(datos => datos.json())
