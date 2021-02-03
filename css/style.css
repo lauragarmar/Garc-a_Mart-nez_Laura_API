@@ -8,3 +8,51 @@
     border: 1px solid black;
 }
 
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.nav__link {
+    display: block;
+    width: 125px;
+    text-align: center;
+    color: #60C3DB;
+    text-decoration: none;
+    border: 1px solid #60C3DB;
+    padding: 0.25em;
+    border-radius: 0.2em;
+    margin: 0.2em;
+}
+
+
+.nav__link:hover {
+    text-align: center;
+    background: #60C3DB;
+    color: #111;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.article1{
+    grid-area:article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+.footer {
+    grid-area: footer;
+}
