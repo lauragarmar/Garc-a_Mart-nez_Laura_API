@@ -1,7 +1,18 @@
 
 .container{
     border: 1px solid black;
-}
+    background: url("../img/fondo.jpg");
+    display:grid; 
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 75px 680px 75px;
+    grid-template-areas: "header" "nav " "section " "footer ";
+    max-width: 1920px;
+    width: 100%;
+ 
+} 
+    
+    
 
 .header{
     border: 1px solid black;
@@ -55,6 +66,9 @@
 .nav {
     border: 1px solid black;
     grid-area: nav;
+}
+.section{
+    grid-area: section;
 }
 
 .article1{
