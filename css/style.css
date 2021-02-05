@@ -87,6 +87,7 @@
     color: #009AC2;
     background-color: #e2f4f6bd;
     border: 1px solid #009AC2;
+    border-radius: 5px;
     width: 35%;
     height: 15%;
     padding: 10px;
@@ -100,6 +101,11 @@
     border: 1px solid #009AC2;
     border-radius: 5px;
     padding: 5px;
+}
+
+.middle__button:hover{
+    background-color: white;
+    color:#009AC2;
 }
 
 .article1{
