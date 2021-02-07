@@ -5,7 +5,7 @@ let answer = document.getElementById("answer");
 let country = document.getElementById("country");
 let city = document.getElementById("city");
 let search = document.getElementById("search");
-let article = document.getElementById("article");
+//let article = document.getElementById("article");
 
 
 
@@ -80,11 +80,11 @@ search.addEventListener("click", () => {
         fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${ci},${selected}&key=bbd5f56653824375a2681f64e4e7cf35`)
 
             .then(datos => {
-               if(datos.status==200) {
-                   return datos.json();
-               }else if(datos.status==204){
-                   alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta")
-               }
+                if (datos.status == 200) {
+                    return datos.json();
+                } else if (datos.status == 204) {
+                    alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta")
+                }
             })
             //.catch((e) => { alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta"); })
             .then(json => {
@@ -96,7 +96,9 @@ search.addEventListener("click", () => {
             console.log(json);
             for (let j = 0; j < hol.length; j++) {
                 let holi = document.createElement("div");
+                holi.classList.add("data__container");
                 let p = document.createElement("p");
+                p.classList.add("data__holiday")
                 p.textContent = hol[j].name;
 
                 let d = new Date(hol[j].date.iso).getTime() - date.getTime();
@@ -105,12 +107,32 @@ search.addEventListener("click", () => {
                 let res = Math.floor(d / (1000 * 60 * 60 * 24));
                 //Math.floor porque tiene que ser los días completos
                 //res dice los días de diferencia que hay entre la fecha actual y los días de fiesta
-                let da = document.createElement("p");
+                let we = document.createElement("p");
 
-                da.textContent = JSON.stringify(json.data[res - 1]);
+                we.textContent = "Temperatura maxima: " + JSON.stringify(json.data[res - 1].max_temp);
+
+                let min = document.createElement("p");
+
+                min.textContent = "Temperatura minima: " + JSON.stringify(json.data[res - 1].min_temp);
+
+                let datedef = document.createElement("p");
+                datedef.textContent = "Fecha: " + json.data[res - 1].valid_date;
+                let desc = document.createElement("p");
+                desc.textContent = json.data[res - 1].weather.description;
+                let icon = document.createElement("img");
+                let img = json.data[res - 1].weather.icon;
+
+                icon.src = `https://www.weatherbit.io/static/img/icons/${img}.png`;
+
+
+
 
                 holi.appendChild(p);
-                holi.appendChild(da);
+                holi.appendChild(we);
+                holi.appendChild(min);
+                holi.appendChild(datedef);
+                holi.appendChild(desc);
+                holi.appendChild(icon);
                 answer.appendChild(holi);
 
             }
