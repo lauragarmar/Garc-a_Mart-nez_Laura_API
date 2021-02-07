@@ -126,7 +126,7 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -148,10 +148,26 @@
 }
 
 .article2{
-    grid-area:article2; 
     
+    grid-area:article2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+.galeria{
+    display: grid;
+
+}
+
+galeria__uno
+
+.galeria__img{
+    height: 200px;
+    width: 300px;
 }
 
 .data__container{
