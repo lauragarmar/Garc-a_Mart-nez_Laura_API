@@ -79,8 +79,14 @@ search.addEventListener("click", () => {
 
         fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${ci},${selected}&key=bbd5f56653824375a2681f64e4e7cf35`)
 
-            .then(datos =>  datos.json())
-            .catch((e)=>{ alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta"); })
+            .then(datos => {
+               if(datos.status==200) {
+                   return datos.json();
+               }else if(datos.status==204){
+                   alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta")
+               }
+            })
+            //.catch((e) => { alert("La ciudad no se corresponde con el país. Introduce una ciudad correcta"); })
             .then(json => {
                 // console.log(json);
                 mostrar(json);
