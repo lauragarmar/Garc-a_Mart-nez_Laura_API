@@ -1,7 +1,7 @@
 .body{
     background: url("../img/pexels-leonardo-rossatti-2612650.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
 }
 .container{
