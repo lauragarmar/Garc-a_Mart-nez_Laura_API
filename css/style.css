@@ -195,6 +195,8 @@
 
 
 
+
+
 .data__container{
     border: 1px solid black;
     margin: 10px;
@@ -233,10 +235,32 @@
         background-size: 300%;
     }
 
+    .section__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hidden{
+        margin-top: 20px;
         display:flex;
         border: 1px solid #1687a7;
+        background-color:#bbf1fa;
+        color:  #1687a7; 
+        width: 80%;
+        border-radius: 5px;
+    }
 
+    .hidden__text{
+        font-family: 'Roboto', sans-serif;
+        padding: 10px;
+    }
+
+    .hidden__img{
+        width: 450px;
+        height: 267px;
+        
+        border-radius: 5px 0px 0px 5px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -247,4 +271,15 @@
     .body{
         background-size: 200%;
     }
+
+
+    .section__container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .middle{
+        align-self: center;
+    }
+
 }
