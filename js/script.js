@@ -12,7 +12,7 @@ let search = document.getElementById("search");
 //tengo que hacer una variable con el selected??
 
 const research = () => {
-    fetch("https://calendarific.com/api/v2/countries?api_key=16f912c9625c58a56df8017b58c31bdf64da6c87")
+    fetch("https://calendarific.com/api/v2/countries?api_key=c6c57e5fdda1aafd83ada5c4d57e0c0994714d5a")
         .then(datos => datos.json())
         .then(json => {
 
@@ -53,7 +53,7 @@ search.addEventListener("click", () => {
         alert("Poner la ciudad es obligatorio");
         return; //esto hace que salgamos de la función que maneja el click
     }
-    fetch(`https://calendarific.com/api/v2/holidays?&api_key=16f912c9625c58a56df8017b58c31bdf64da6c87&country=${selected}&year=${date.getFullYear()}`)
+    fetch(`https://calendarific.com/api/v2/holidays?&api_key=c6c57e5fdda1aafd83ada5c4d57e0c0994714d5a&country=${selected}&year=${date.getFullYear()}`)
         .then(datos => datos.json())
 
         .then(json => {
