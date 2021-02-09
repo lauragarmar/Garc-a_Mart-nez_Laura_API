@@ -1,9 +1,13 @@
+/* BODY */
+
 .body{
     background: url("../img/pexels-leonardo-rossatti-2612650.jpg");
     background-repeat: no-repeat;
-    background-size: 350vh;
+    background-size: 500%;
 
 }
+
+/* CONTENEDOR */
 .container{
     height: 100vh;
     display: grid;
@@ -16,6 +20,8 @@
                          "footer footer ";
  
 } 
+
+/* HEADER */
 
 .header{
     display: flex;
@@ -74,6 +80,8 @@
 .nav {
     grid-area: nav;
 }
+
+/* SECTION */
 .section{
    grid-area: section; 
     display: flex;
@@ -105,6 +113,10 @@
 .middle__button:hover{
     background-color: white;
     color:#009AC2;
+}
+
+.hidden{
+    display:none;
 }
 .article1,.article2{
     border: 1px solid #009AC2;
@@ -196,6 +208,8 @@
 .data__holiday{
     font-weight: bolder;
 }
+
+/* FOOTER */
 .footer {
     background-color: #333;
     grid-area: footer;
@@ -209,12 +223,20 @@
     align-content: center;
 }
 
-
+/* MEDIA QUERYS */
 @media screen and (min-width: 1024px){
     .grid__container{
         max-width: 700px;
     }
-    
+    .body{
+        background-size: 300%;
+    }
+
+    .hidden{
+        display:flex;
+        border: 1px solid #009AC2;
+
+    }
 }
 @media screen and (min-width: 1200px){
     .grid__container{
@@ -222,6 +244,6 @@
     }
 
     .body{
-        background-size: 100%;
+        background-size: 200%;
     }
 }
