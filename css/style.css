@@ -26,7 +26,7 @@
 .header{
     display: flex;
     background-color: #bbf1fa;
-    color: #51c2d5;;
+    color: #1687a7;
     grid-area: header;
     justify-content: center;
     
@@ -64,7 +64,7 @@
     padding: 0.25em;
     border-radius: 0.2em;
     margin: 0.2em;
-    color: #51c2d5;
+    color: #1687a7;
     background-color:  #bbf1fa;
     font-family: 'Roboto', sans-serif;
 }
@@ -72,7 +72,7 @@
 
 .nav__link:hover {
     text-align: center;
-    background-color: #51c2d5;
+    background-color: #1687a7;
     color:  #bbf1fa;
     
 }
@@ -91,9 +91,9 @@
 }
 
 .middle{
-    color: #51c2d5;
+    color: #1687a7;
     background-color:  #bbf1fa;
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     border-radius: 5px;
     width: 35%;
     
@@ -103,31 +103,32 @@
 }
 
 .middle__button{
-    background-color: #51c2d5;
+    background-color: #1687a7;
     color: #bbf1fa;
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     border-radius: 5px;
     padding: 5px;
 }
 
 .middle__button:hover{
+    border: 1px solid #1687a7;
     background-color:  #bbf1fa;
-    color:#51c2d5;
+    color:#1687a7;
 }
 
 .hidden{
     display:none;
 }
 .article1,.article2{
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     border-radius: 5px;
     background-color:  #bbf1fa;
-    color: #51c2d5;
+    color: #1687a7;
    
 }
 
 .article1{
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -142,16 +143,17 @@
 .search{
     margin-top: 30px;
     padding: 10px;
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     border-radius: 5px;
-    background-color:#51c2d5; 
-    color:  #bbf1fa;
+    background-color:#1687a7; 
+    color: #bbf1fa;
     margin-bottom: 10px;
 }
 
 .search:hover{
+    border: 1px solid #1687a7;
     background-color: #bbf1fa;
-    color: #51c2d5; 
+    color: #1687a7; 
 }
 
 .article2{
@@ -161,6 +163,8 @@
     flex-direction: column;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+    color: #1687a7;
+    font-weight: bold;
 }
 
 
@@ -190,17 +194,14 @@
 }
 
 
-.grid__text{
-    font-weight: bold;
-}
 
 .data__container{
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #51c2d5;
+    border: 1px solid #1687a7;
     border-radius: 5px;
-    background-color:#51c2d5; 
+    background-color:#1687a7; 
     color:  #bbf1fa;
     
 }
@@ -234,7 +235,7 @@
 
     .hidden{
         display:flex;
-        border: 1px solid #51c2d5;
+        border: 1px solid #1687a7;
 
     }
 }
