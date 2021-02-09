@@ -100,6 +100,25 @@
    
 }
 
+.footer__img:hover{
+    animation-name: img;
+    animation-duration: 2s;
+    
+}
+ 
+@keyframes img{
+    from{
+       opacity:0;
+
+    }
+
+    to{
+        opacity:1;
+        transform: rotate(360deg);
+    }
+} 
+
+
 
 
 

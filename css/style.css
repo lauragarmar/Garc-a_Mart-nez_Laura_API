@@ -193,18 +193,19 @@
 
     .section__container{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+
         padding: 10px;
     }
 
     .middle{
         align-self: center;
-        margin-right: 10px;
-        width: 50%;
+        margin-left: 10px;
+        width: 30%;
     }
 
     .hidden__img{
-    height: 370px;
+    height: 270px;
     }
 
 }
