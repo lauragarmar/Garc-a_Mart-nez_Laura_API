@@ -25,8 +25,8 @@
 
 .header{
     display: flex;
-    background-color: #E2F4F6;
-    color: #009AC2;
+    background-color: #bbf1fa;
+    color: #51c2d5;;
     grid-area: header;
     justify-content: center;
     
@@ -58,22 +58,22 @@
     display: block;
     width: 125px;
     text-align: center;
-    color: #60C3DB;
+    
     text-decoration: none;
-    border: 1px solid #60C3DB;
+    border: 1px solid #bbf1fa;
     padding: 0.25em;
     border-radius: 0.2em;
     margin: 0.2em;
-    color: #009AC2;
-    background-color: #E2F4F6;
+    color: #51c2d5;
+    background-color:  #bbf1fa;
     font-family: 'Roboto', sans-serif;
 }
 
 
 .nav__link:hover {
     text-align: center;
-    background-color: #009AC2;
-    color: #E2F4F6;
+    background-color: #51c2d5;
+    color:  #bbf1fa;
     
 }
 
@@ -91,9 +91,9 @@
 }
 
 .middle{
-    color: #009AC2;
-    background-color: #e2f4f6bd;
-    border: 1px solid #009AC2;
+    color: #51c2d5;
+    background-color:  #bbf1fa;
+    border: 1px solid #51c2d5;
     border-radius: 5px;
     width: 35%;
     
@@ -103,31 +103,31 @@
 }
 
 .middle__button{
-    background-color: #009AC2;
-    color:white;
-    border: 1px solid #009AC2;
+    background-color: #51c2d5;
+    color: #bbf1fa;
+    border: 1px solid #51c2d5;
     border-radius: 5px;
     padding: 5px;
 }
 
 .middle__button:hover{
-    background-color: white;
-    color:#009AC2;
+    background-color:  #bbf1fa;
+    color:#51c2d5;
 }
 
 .hidden{
     display:none;
 }
 .article1,.article2{
-    border: 1px solid #009AC2;
+    border: 1px solid #51c2d5;
     border-radius: 5px;
-    background-color: white;
-    color: #009AC2;
+    background-color:  #bbf1fa;
+    color: #51c2d5;
    
 }
 
 .article1{
-    border: 1px solid #009AC2;
+    border: 1px solid #51c2d5;
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -142,16 +142,16 @@
 .search{
     margin-top: 30px;
     padding: 10px;
-    border: 1px solid #009AC2;
+    border: 1px solid #51c2d5;
     border-radius: 5px;
-    background-color:#009AC2; 
-    color: white;
+    background-color:#51c2d5; 
+    color:  #bbf1fa;
     margin-bottom: 10px;
 }
 
 .search:hover{
-    background-color:white;
-    color: #009AC2; 
+    background-color: #bbf1fa;
+    color: #51c2d5; 
 }
 
 .article2{
@@ -198,10 +198,10 @@
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #009AC2;
+    border: 1px solid #51c2d5;
     border-radius: 5px;
-    background-color:#009AC2; 
-    color: white;
+    background-color:#51c2d5; 
+    color:  #bbf1fa;
     
 }
 
@@ -234,7 +234,7 @@
 
     .hidden{
         display:flex;
-        border: 1px solid #009AC2;
+        border: 1px solid #51c2d5;
 
     }
 }
