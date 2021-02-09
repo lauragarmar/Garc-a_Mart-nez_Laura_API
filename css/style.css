@@ -6,6 +6,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-name:section;
+    animation-duration: 2s;
+}
+
+
+@keyframes section{
+
+	from{
+		opacity: 0;
+		transform: translate(0,-100px);
+	}
+	
+	to{
+		opacity:1;
+		transform: translate(0px,0px);
+	}
 }
 
 .middle{
@@ -13,7 +29,7 @@
     background-color:  #bbf1fa;
     border: 1px solid #1687a7;
     border-radius: 5px;
-    width: 70%;
+    width: 100%;
     padding: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -184,10 +200,11 @@
     .middle{
         align-self: center;
         margin-right: 10px;
+        width: 50%;
     }
 
     .hidden__img{
-    height: 310px;
+    height: 370px;
     }
 
 }

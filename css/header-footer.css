@@ -44,25 +44,6 @@
     padding: 5px;
 }
 
-
-
-/* FOOTER */
-.footer {
-    background-color: #333;
-    grid-area: footer;
-   
-}
-
-.footer__rs{
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-}
-
-
-
-
 .nav__list {
     display: flex;
     justify-content: space-evenly;
@@ -87,6 +68,7 @@
     color: #1687a7;
     background-color:  #bbf1fa;
     font-family: 'Roboto', sans-serif;
+    transition: transform 1s ease;
 }
 
 
@@ -94,9 +76,32 @@
     text-align: center;
     background-color: #1687a7;
     color:  #bbf1fa;
+    transform: scale(1.5);
     
 }
 
 .nav {
     grid-area: nav;
+    
 }
+
+/* FOOTER */
+.footer {
+    background-color: #333;
+    grid-area: footer;
+   
+}
+
+.footer__rs{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+   
+}
+
+
+
+
+
+
