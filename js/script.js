@@ -73,9 +73,16 @@ search.addEventListener("click", () => {
 
             return hDate > date && hDate < newDate;
             //como hDate tiene que ser mayor estricto que date estoy ignorando el día actual
+
         });
 
+
+
         //console.log(hol);
+
+        if (hol.length == 0) {
+            alert("No hay vacaciones disponibles en los próximos 16 días");
+        }
 
         fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${ci},${selected}&key=bbd5f56653824375a2681f64e4e7cf35`)
 
@@ -94,6 +101,9 @@ search.addEventListener("click", () => {
 
         const mostrar = (json) => {
             console.log(json);
+            while (answer.firstChild) {
+                answer.removeChild(answer.firstChild)
+            }
             for (let j = 0; j < hol.length; j++) {
                 let holi = document.createElement("div");
                 holi.classList.add("data__container");
@@ -123,9 +133,9 @@ search.addEventListener("click", () => {
                 let img = json.data[res - 1].weather.icon;
 
                 icon.src = `https://www.weatherbit.io/static/img/icons/${img}.png`;
+                //antes de hacer el append eliminar todos los nodos de donde vas a hacer el append
 
-
-
+                //padre 
 
                 holi.appendChild(p);
                 holi.appendChild(we);
@@ -133,12 +143,17 @@ search.addEventListener("click", () => {
                 holi.appendChild(datedef);
                 holi.appendChild(desc);
                 holi.appendChild(icon);
+
                 answer.appendChild(holi);
+
+
 
             }
 
         }
     }
+
+
 
 });
 
